@@ -1,6 +1,5 @@
 from PIL import Image, ImageFilter
 
-img = Image.open("./images/4.1 pikachu.jpg.jpg")
-filtered_img = img.convert('L')
-crooked = filtered_img.rotate(180)
-crooked.save("grey.png", "png")
+img = Image.open("images/6.1 astro.jpg.jpg")
+new_img = img.resize((400, 400))
+new_img.save('thumbnail.jpg')
